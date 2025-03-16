@@ -1,1 +1,58 @@
 /*  your css code here. If applicable */
+/* Root pseudo-class for background */
+:root {
+    --page-bg: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--page-bg);
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Article paragraphs styling */
+article p:first-child {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+article p:nth-child(2) {
+    color: black; /* Default color */
+    padding: 10px;
+}
+
+article p:last-child {
+    color: red;
+    padding: 10px;
+}
+
+/* List items styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Odd list items */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and Last items font size */
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item background */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
